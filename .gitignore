@@ -1,0 +1,47 @@
+# --- Secrets / 환경변수 ---
+# API 키는 절대 커밋하지 않는다 (Anthropic, 카카오, 구글)
+server/.env
+.env
+*.env
+!*.env.example
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+# 가상환경
+server/.venv/
+.venv/
+venv/
+env/
+
+# --- 서버 런타임 데이터 (원본은 재생성 가능) ---
+server/data/images/
+server/data/*.db
+server/data/*.sqlite
+server/data/*.sqlite3
+
+# --- Node (지오펜스 순수함수 테스트용) ---
+node_modules/
+package-lock.json
+npm-debug.log*
+
+# --- OS / 에디터 ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# --- 기타 ---
+*.log
+
+# 배포 산출물
+snaptok_v2_dist.zip
+# 임시 작업 파일
+_*.txt
+_*.py
